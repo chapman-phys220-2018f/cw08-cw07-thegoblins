@@ -14,15 +14,21 @@ import numpy as np
 
 def Sn(t,n):
     '''Sn function
-Args: t - a value between -pi/2 or pi/2
+Args: t - a value between -pi/2 and pi/2
       n - amount of recursions of the converging sum function
 Returns: the sum of the converging sum function Sn (found on README) 
 Should be converting to a value -1,0,or 1 as n grows arbitrary large.'''
     k = np.arange(1,n+1,1)
     constant  = np.divide(4,np.pi)
-    T  = 2*np.pi
-    sn = [np.multiply(np.divide(1,(2*i-1)),np.sin(np.divide((2*(2*i-1)*np.pi*t),T))) for i in k]
-    return constant*np.sum(np.array(sn)).sum()
+    def term(k,t,T = np.multiply(2,np.pi)):
+        # The equation which is summed
+        coefficient = np.divide(1,(2*k-1))
+        insideSine = np.divide((2*(2*k-1)*np.pi*t),T)
+        return np.multiply(coefficient,np.sin(insideSine))
+    
+    vectorizedTerm = np.vectorize(term)
+    returnVal = np.multiply(vectorizedTerm(k,t),constant)
+    return returnVal.sum()
 
 def f(t):
     '''f function
