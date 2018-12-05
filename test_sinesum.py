@@ -10,7 +10,7 @@ import sinesum
 
 def test_f():
  """Test function to check if f function in cw08 module works correctly"""
- assert sinesum.f(0) == 0
+    assert sinesum.f(0) == 0
     assert sinesum.f(0.3*math.pi*2,100) == 1
     assert math.isclose(sinesum.f(-1),1)
 
