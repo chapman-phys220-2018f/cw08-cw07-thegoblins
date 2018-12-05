@@ -2,7 +2,8 @@
 
 # PHYS220/MATH220/CPSC220 CW 8
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Enea Dodi
+Ben Seeley**
 
 ## Specification
 
@@ -37,9 +38,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
 
-**CHANGEME**
-
-## Honor Pledge
+**Sorry this took so long! It is finally done. The hardest part was honestly a mixup i had made along the way where I started plotting the graphs for the different n values seperately. Hope its looking good now! Also, I looked at cw08-big-team code simply to compare final products.**
 
 I pledge that all the work in this repository is my own with only the following exceptions:
 
@@ -48,7 +47,8 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAMES**
+**Enea Dodi
+  Ben Seeley**
 
 
 
